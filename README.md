@@ -1,6 +1,6 @@
 # README
 
-Microblogging app that deploys to Netlify
+Microblogging app that deploys to Netlify. This is the repository for the Rails backend.
 
 ## Stack
 * Rails backend API
@@ -24,3 +24,11 @@ Blogs are deployed to Netlify by generating an index.html page from your posts a
 
 ## React
 The React frontend communicates with the Rails backend through the API. Tokens are used for user authentication.
+
+## Test user
+Test user in seeds.rb -- user@lol.com / netlify123
+
+## TO DO
+* Add ability to create a new user (as of now you can only log in with existing users)
+* Restrict parameters with permitted_params
+* Add errors returned from backend to the UI
