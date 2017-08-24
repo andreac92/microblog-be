@@ -28,6 +28,11 @@ The React frontend communicates with the Rails backend through the API. Tokens a
 ## Test user
 Test user in seeds.rb -- user@lol.com / netlify123
 
+## Running the app locally
+By default the frontend makes request to the localhost on port 3001. So, you can run the app as so:
+
+rails s -p 3001
+
 ## TO DO
 * Add ability to create a new user (as of now you can only log in with existing users)
 * Restrict parameters with permitted_params
