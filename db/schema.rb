@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20170823010507) do
     t.string   "image"
     t.string   "email"
     t.text     "tokens"
+    t.string   "site_id"
     t.datetime "created_at",                               null: false
     t.datetime "updated_at",                               null: false
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
