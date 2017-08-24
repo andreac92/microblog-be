@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Microblogging app that deploys to Netlify
 
-Things you may want to cover:
+## Stack
+* Rails backend API
+* React frontend
 
-* Ruby version
+## Description
+This app allows you to sign in as a user and create microblogging posts. You can edit or delete each post you've created.
 
-* System dependencies
+Then, you can choose from 3 different layouts for your blog. Once you're satisfied you can click "Deploy" to deploy your blog as a static site to Netlify. If you make any changes, you can always redeploy.
 
-* Configuration
+## Rails
+The Rails API consists of the following endpoints:
+* GET /posts --> Retrieve all posts
+* POST /posts --> Create a new post
+* PUT /posts/:id --> Modify a post
+* DELETE /posts/:id --> Delete a post
 
-* Database creation
+* POST /deploys --> Deploy to Netlify
 
-* Database initialization
+Blogs are deployed to Netlify by generating an index.html page from your posts and chosen layout, and zipping the file up with a stylesheet to be sent to Netlify.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## React
+The React frontend communicates with the Rails backend through the API. Tokens are used for user authentication.
