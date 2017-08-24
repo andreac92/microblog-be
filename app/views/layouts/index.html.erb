@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+   </head>
+
+   <body>
+   	<h1> <%= @name %>'s awesomemicro-blog</h1>
+    <p>Hosted on Netlify!</p>
+   	<div class="<%= @layout %>">
+   		<% @posts.each do |post| %>
+        <div>
+          <%= post.content %>
+          <span><%= post.updated_at %></span>
+        </div>
+      <% end %>
+   	</div>
+   </body>
+</html>
